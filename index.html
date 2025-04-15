@@ -20,6 +20,15 @@
       color: white;
       padding: 20px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      width: 50px; /* Adjust the size of the image */
+      height: 50px; /* Maintain proportions */
+      border-radius: 50%; /* Make the image circular */
+      margin-right: 15px; /* Add space between image and text */
     }
     nav {
       display: flex;
@@ -95,8 +104,11 @@
 </head>
 <body>
   <header>
-    <h1>Tomar Law Associates</h1>
-    <p>Lokendra Singh Tomar, Advocate</p>
+    <img src="father.jpg" alt="Father Image">
+    <div>
+      <h1>Tomar Law Associates</h1>
+      <p>Lokendra Singh Tomar, Advocate</p>
+    </div>
   </header>
 
   <nav>
@@ -113,24 +125,20 @@
   <section class="section" id="about">
     <h2>About the Firm</h2>
     <p>Tomar Law Associates, located in Hills View Colony, Gwalior, is dedicated to delivering high-quality legal representation in Family Law, Criminal Defense, and Real Estate. Led by Lokendra Singh Tomar, the firm has established a reputation for excellence and integrity.</p>
-    <img src="ai-image-url-about" alt="About the Firm">
   </section>
 
   <section class="section" id="services">
     <h2>Practice Areas</h2>
     <div class="practice-areas">
       <div class="area">
-        <img src="ai-image-url-family-law" alt="Family Law">
         <h3>Family Law</h3>
         <p>Expert guidance on divorce, child custody, and family disputes.</p>
       </div>
       <div class="area">
-        <img src="ai-image-url-criminal-defense" alt="Criminal Defense">
         <h3>Criminal Defense</h3>
         <p>Strong representation to protect your legal rights and freedom.</p>
       </div>
       <div class="area">
-        <img src="ai-image-url-real-estate" alt="Real Estate">
         <h3>Real Estate</h3>
         <p>Trusted support in property transactions and land disputes.</p>
       </div>
@@ -142,7 +150,6 @@
     <p><strong>Phone:</strong> +91 9826943953 / +91 9407204773 / +91 9425078688</p>
     <p><strong>Email:</strong> <a href="mailto:lokendratomaradvocate@gmail.com">lokendratomaradvocate@gmail.com</a></p>
     <p><strong>Address:</strong> 61-A Hills View Colony, DD Nagar, Gwalior, Madhya Pradesh, India</p>
-    <img src="ai-image-url-contact" alt="Contact Us">
   </section>
 
   <footer class="footer">
