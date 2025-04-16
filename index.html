@@ -13,12 +13,12 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #f1f4f8;
+      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
       color: #333;
     }
 
     header {
-      background-color: #002147;
+      background-color: #004080;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -33,7 +33,7 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #00162e;
+      background-color: #002147;
       padding: 15px 0;
       flex-wrap: wrap;
       position: sticky;
@@ -44,10 +44,12 @@
     nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       padding: 14px 25px;
       font-weight: bold;
       font-size: 1.1em;
       transition: background 0.3s ease;
+      border-radius: 5px;
     }
 
     nav a:hover {
@@ -56,19 +58,19 @@
 
     .hero {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #002147, #004080);
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #004080, #0066cc);
       color: white;
       position: relative;
     }
 
     .hero h1 {
-      font-size: 3.5em;
-      margin-bottom: 15px;
+      font-size: 4em;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 1.3em;
+      font-size: 1.5em;
     }
 
     .section {
@@ -79,39 +81,56 @@
 
     .section h2 {
       text-align: center;
-      color: #002147;
+      color: #004080;
       margin-bottom: 40px;
-      font-size: 2.2em;
+      font-size: 2.5em;
+      border-bottom: 3px solid #004080;
+      display: inline-block;
     }
 
     .section p {
       text-align: center;
-      font-size: 1.1em;
+      font-size: 1.2em;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto;
+      line-height: 1.6;
     }
 
     footer {
-      background-color: #002147;
+      background-color: #004080;
       color: white;
       text-align: center;
       padding: 25px 10px;
-      margin-top: 40px;
       font-size: 0.95em;
     }
 
     .contact {
       text-align: center;
       padding: 40px 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .contact h2 {
-      color: #002147;
+      color: #004080;
+      font-size: 2.5em;
     }
 
     .contact-info {
       margin: 20px 0;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
 
     .floating-buttons {
@@ -167,7 +186,7 @@
     <div class="contact-info">
       <p><strong>Address:</strong> 61-A Hills View Colony, DD Nagar, Gwalior, M.P., India</p>
       <p><strong>Phone:</strong> +91-9826943953, +91-9425078688, +91-9407204773</p>
-      <p><strong>Email:</strong> example@email.com</p>
+      <p><strong>Email:</strong> <a href="mailto:lokendratomaradvocate@gmail.com">lokendratomaradvocate@gmail.com</a></p>
     </div>
   </div>
 
