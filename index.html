@@ -13,7 +13,7 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+      background: #ffffff;
       color: #333;
     }
 
@@ -59,18 +59,20 @@
     .hero {
       text-align: center;
       padding: 100px 20px;
-      background: linear-gradient(135deg, #004080, #0066cc);
       color: white;
+      background: url('image7.jpg.jpg') no-repeat center center/cover;
       position: relative;
     }
 
     .hero h1 {
       font-size: 4em;
       margin-bottom: 20px;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .hero p {
       font-size: 1.5em;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .section {
@@ -96,21 +98,31 @@
       line-height: 1.6;
     }
 
-    .blue-box {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
+    .gallery {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
       text-align: center;
-      max-width: 500px;
-      margin: 40px auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    .blue-box img {
+    .gallery h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .gallery-images img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     footer {
@@ -185,6 +197,7 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -198,9 +211,15 @@
     <p>The association includes Narendra Pal Pawaiya, Kamlesh Kulshrestha, Dharmendra Parmar, Kuldeep Dandotia, Anuj Tiwari, Sachin Srivastava, Naresh Rathore, Satendra Singh Tomar, Divya Pratap Singh Tomar Advocate, and is led by Lokendra Singh Tomar.</p>
   </div>
 
-  <div class="blue-box">
-    <h2>Our Featured Image</h2>
-    <img src="gallery6.jpg.jpg" alt="Featured Image">
+  <div class="gallery" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-images">
+      <img src="gallery/gallery1.jpg.jpg" alt="Gallery 1">
+      <img src="gallery/gallery2.jpg.jpg" alt="Gallery 2">
+      <img src="gallery/gallery3.jpg.jpg" alt="Gallery 3">
+      <img src="gallery/gallery4.jpg.jpg" alt="Gallery 4">
+      <img src="gallery/gallery5.jpg.jpg" alt="Gallery 5">
+    </div>
   </div>
 
   <div class="contact" id="contact">
