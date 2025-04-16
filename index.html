@@ -53,12 +53,20 @@
       position: relative;
     }
 
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-top: 30px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
     }
 
     .hero h1 {
@@ -74,14 +82,6 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-    }
-
-    .section img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
 
     .section h2 {
@@ -113,6 +113,11 @@
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .area:hover {
+      transform: translateY(-5px);
     }
 
     .area h3 {
@@ -170,6 +175,48 @@
       font-size: 0.95em;
     }
 
+    .services-list {
+      background-color: #f0f4f8;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services-list h2 {
+      color: #002147;
+      margin-bottom: 30px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .service-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .law-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .law-image {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
     @media screen and (max-width: 768px) {
       .practice-areas {
         flex-direction: column;
@@ -178,6 +225,10 @@
 
       #contact {
         flex-direction: column;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -191,19 +242,26 @@
   <nav>
     <a href="#about">About Us</a>
     <a href="#areas">Practice Areas</a>
+    <a href="#services">Our Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="hero">
-    <h1>Welcome to Tomar Law Associates</h1>
-    <p>Providing expert legal services with a personal touch.</p>
-    <img src="https://via.placeholder.com/800x400?text=Hero+Image" alt="Law Office Hero Image">
+    <div class="hero-content">
+      <h1>Welcome to Tomar Law Associates</h1>
+      <p>Providing expert legal services with a personal touch.</p>
+    </div>
   </div>
 
   <div class="section" id="about">
-    <img src="https://via.placeholder.com/800x400?text=About+Image" alt="About Our Law Firm">
     <h2>About Us</h2>
     <p>Tomar Law Associates is committed to delivering top-notch legal solutions. With deep experience across multiple areas of law, we advocate fiercely for justice, integrity, and your peace of mind.</p>
+    
+    <div class="law-images">
+      <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Courtroom" class="law-image">
+      <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Legal documents" class="law-image">
+      <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Judge's gavel" class="law-image">
+    </div>
   </div>
 
   <div class="section" id="areas">
@@ -224,8 +282,64 @@
     </div>
   </div>
 
+  <div class="services-list" id="services">
+    <h2>Our Legal Services</h2>
+    <p>Thank you for contacting M.P. High Court Advocate Lokendra Singh Tomar. Please let us know how we can help you with:</p>
+    
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Criminal Cases</h3>
+        <p>Expert defense in all criminal matters</p>
+      </div>
+      <div class="service-item">
+        <h3>Bail Application</h3>
+        <p>Professional assistance in bail matters</p>
+      </div>
+      <div class="service-item">
+        <h3>Suspension</h3>
+        <p>Legal solutions for suspension cases</p>
+      </div>
+      <div class="service-item">
+        <h3>Family Matters</h3>
+        <p>Comprehensive family law services</p>
+      </div>
+      <div class="service-item">
+        <h3>Domestic Violence</h3>
+        <p>Protection and legal remedies</p>
+      </div>
+      <div class="service-item">
+        <h3>Maintenance</h3>
+        <p>Expert handling of maintenance cases</p>
+      </div>
+      <div class="service-item">
+        <h3>Divorce</h3>
+        <p>Guidance through divorce proceedings</p>
+      </div>
+      <div class="service-item">
+        <h3>Habeas Corpus</h3>
+        <p>Protection of personal liberty</p>
+      </div>
+      <div class="service-item">
+        <h3>Writ Petition</h3>
+        <p>Constitutional remedies</p>
+      </div>
+      <div class="service-item">
+        <h3>Misc. Petition</h3>
+        <p>Various legal petitions</p>
+      </div>
+      <div class="service-item">
+        <h3>POCSO Specialist</h3>
+        <p>Expert in Protection of Children from Sexual Offences cases</p>
+      </div>
+      <div class="service-item">
+        <h3>Marriage</h3>
+        <p>Legal advice on marriage matters</p>
+      </div>
+    </div>
+  </div>
+
   <div id="contact">
-    <img src="https://via.placeholder.com/200x200?text=Contact+Image" alt="Lokendra Singh Tomar" class="contact-image">
+    <img src="father.jpg" alt="Lokendra Singh Tomar" class="contact-image">
     <div class="contact-info">
       <h2>Contact Us</h2>
       <p><strong>Phone:</strong> +91 9826943953 / +91 9407204773 / +91 9425078688</p>
