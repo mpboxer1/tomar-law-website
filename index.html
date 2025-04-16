@@ -57,15 +57,17 @@
 
     .hero {
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #004080, #1a75ff);
-      color: white;
-      animation: fadeIn 2s ease-in-out;
+      padding: 20px 20px;
+      background-color: #ffffff;
+      color: #002147;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .hero h1 {
@@ -82,7 +84,6 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-      animation: fadeIn 1.5s ease-in-out;
     }
 
     .section h2 {
@@ -126,7 +127,6 @@
       padding: 60px 20px;
       background-color: #ffffff;
       border-top: 1px solid #ddd;
-      animation: fadeIn 1.5s ease-in-out;
     }
 
     .contact h2 {
@@ -148,32 +148,6 @@
 
     .contact-info a:hover {
       text-decoration: underline;
-    }
-
-    .floating-buttons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 100;
-    }
-
-    .floating-buttons a {
-      background-color: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-    }
-
-    .floating-buttons a.call {
-      background-color: #007bff;
     }
 
     footer {
@@ -262,6 +236,7 @@
   </nav>
 
   <div class="hero">
+    <img src="image7.jpg.jpg" alt="Tomar Law Associates Banner">
     <h1>Welcome to Tomar Law Associates</h1>
     <p>Expert Legal Representation by Lokendra Singh Tomar</p>
   </div>
@@ -326,7 +301,7 @@
 
   <footer>
     <p>&copy; 2025 Tomar Law Associates. All rights reserved.</p>
-  </footer>
+  </footer>          
 
 </body>
 </html>
