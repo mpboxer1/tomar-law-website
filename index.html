@@ -1,158 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomar Law Associates</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Merriweather', serif;
-      background-image: url('father.jpg');
-      background-repeat: repeat;
-      background-size: 100px 100px;
-      background-attachment: fixed;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1a73e8, #ff6d01); /* AI-inspired gradient */
       color: #333;
     }
+
     header {
+      display: flex;
+      align-items: center;
       background-color: #002147;
       color: white;
       padding: 20px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
+
     header img {
-      width: 50px; /* Adjust the size of the image */
-      height: 50px; /* Maintain proportions */
-      border-radius: 50%; /* Make the image circular */
-      margin-right: 15px; /* Add space between image and text */
+      width: 150px; /* Adjusted size for the photo */
+      height: auto;
+      border-radius: 15px; /* Frame effect */
+      margin-right: 20px;
     }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
     nav {
       display: flex;
       justify-content: center;
       background-color: #00162e;
+      padding: 10px 0;
     }
+
     nav a {
       color: white;
       padding: 14px 20px;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
+
     nav a:hover {
       background-color: #004080;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1555371363-44cbb1b090d6') center/cover no-repeat;
-      color: white;
       text-align: center;
       padding: 100px 20px;
+      background: url('https://source.unsplash.com/AI-themed/2121x1414') center/cover no-repeat; /* AI-themed image */
+      color: white;
     }
+
     .hero h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
+
     .hero p {
       font-size: 1.2em;
     }
+
     .section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     .section h2 {
       text-align: center;
       color: #002147;
+      margin-bottom: 40px;
     }
+
     .practice-areas {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      margin-top: 40px;
     }
+
     .area {
       width: 250px;
       text-align: center;
       margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
     }
+
     .area img {
       width: 100%;
       height: 150px;
       object-fit: cover;
-      border-radius: 10px;
     }
+
     .area h3 {
-      margin: 10px 0;
+      margin-top: 10px;
+      color: #333;
     }
-    .contact {
-      background-color: #f1f1f1;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .footer {
+
+    footer {
       background-color: #002147;
       color: white;
       text-align: center;
       padding: 20px;
-    }
-    a {
-      color: #004080;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="father.jpg" alt="Father Image">
-    <div>
-      <h1>Tomar Law Associates</h1>
-      <p>Lokendra Singh Tomar, Advocate</p>
-    </div>
+    <img src="https://source.unsplash.com/2121x1414/?portrait" alt="Father's Photo">
+    <h1>Tomar Law Associates</h1>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Practice Areas</a>
+    <a href="#about">About Us</a>
+    <a href="#areas">Practice Areas</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h1>Providing trusted legal counsel for over 30 years</h1>
-    <p>Defending your rights with integrity and dedication</p>
-  </section>
+  <div class="hero">
+    <h1>Welcome to Tomar Law Associates</h1>
+    <p>Providing expert legal services with a personal touch.</p>
+  </div>
 
-  <section class="section" id="about">
-    <h2>About the Firm</h2>
-    <p>Tomar Law Associates, located in Hills View Colony, Gwalior, is dedicated to delivering high-quality legal representation in Family Law, Criminal Defense, and Real Estate. Led by Lokendra Singh Tomar, the firm has established a reputation for excellence and integrity.</p>
-  </section>
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Tomar Law Associates is dedicated to offering the highest standard of legal representation for our clients. With years of experience, we specialize in various areas of law, ensuring justice and professionalism at every step.</p>
+  </div>
 
-  <section class="section" id="services">
+  <div class="section" id="areas">
     <h2>Practice Areas</h2>
     <div class="practice-areas">
       <div class="area">
+        <img src="https://source.unsplash.com/250x150/?law" alt="Criminal Law">
+        <h3>Criminal Law</h3>
+      </div>
+      <div class="area">
+        <img src="https://source.unsplash.com/250x150/?justice" alt="Family Law">
         <h3>Family Law</h3>
-        <p>Expert guidance on divorce, child custody, and family disputes.</p>
       </div>
       <div class="area">
-        <h3>Criminal Defense</h3>
-        <p>Strong representation to protect your legal rights and freedom.</p>
-      </div>
-      <div class="area">
-        <h3>Real Estate</h3>
-        <p>Trusted support in property transactions and land disputes.</p>
+        <img src="https://source.unsplash.com/250x150/?contract" alt="Corporate Law">
+        <h3>Corporate Law</h3>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91 9826943953 / +91 9407204773 / +91 9425078688</p>
-    <p><strong>Email:</strong> <a href="mailto:lokendratomaradvocate@gmail.com">lokendratomaradvocate@gmail.com</a></p>
-    <p><strong>Address:</strong> 61-A Hills View Colony, DD Nagar, Gwalior, Madhya Pradesh, India</p>
-  </section>
-
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Tomar Law Associates. All rights reserved.</p>
   </footer>
 </body>
