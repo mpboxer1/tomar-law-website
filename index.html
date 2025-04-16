@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tomar Law Associates</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,13 +12,13 @@
 
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #ffffff;
-      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f7fa;
+      color: #1a1a1a;
     }
 
     header {
-      background-color: #004080;
+      background-color: #002147;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -33,7 +33,7 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #002147;
+      background-color: #013369;
       padding: 15px 0;
       flex-wrap: wrap;
       position: sticky;
@@ -44,39 +44,37 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      padding: 14px 25px;
-      font-weight: bold;
+      padding: 12px 20px;
+      font-weight: 600;
       font-size: 1.1em;
       transition: background 0.3s ease;
-      border-radius: 5px;
+      border-radius: 6px;
     }
 
     nav a:hover {
-      background-color: #004080;
+      background-color: #0056b3;
     }
 
     .hero {
       text-align: center;
-      background: url('image7.jpg.jpg') no-repeat center center/cover;
-      height: 400px;
-      position: relative;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #004080, #1a75ff);
+      color: white;
+      animation: fadeIn 2s ease-in-out;
     }
 
-    .hero-content {
-      text-align: center;
-      margin-top: 20px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .hero-content h1 {
-      font-size: 3em;
-      margin: 10px 0;
-      color: #004080;
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
     }
 
-    .hero-content p {
-      font-size: 1.5em;
-      color: #333;
+    .hero p {
+      font-size: 1.3em;
       margin: 0;
     }
 
@@ -84,76 +82,61 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .section h2 {
       text-align: center;
-      color: #004080;
-      margin-bottom: 40px;
-      font-size: 2.5em;
-      border-bottom: 3px solid #004080;
-      display: inline-block;
+      color: #002147;
+      margin-bottom: 30px;
+      font-size: 2.2em;
     }
 
     .section p {
       text-align: center;
-      font-size: 1.2em;
+      font-size: 1.1em;
       max-width: 800px;
-      margin: 20px auto;
+      margin: 0 auto;
       line-height: 1.6;
     }
 
-    .gallery {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .gallery h2 {
-      color: #004080;
-      margin-bottom: 20px;
-      font-size: 2.5em;
-    }
-
-    .gallery-images {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      justify-items: center;
+      margin-top: 40px;
     }
 
-    .gallery-images img {
-      max-width: 100%;
-      height: auto;
+    .service-item {
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s ease;
     }
 
-    footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 25px 10px;
-      font-size: 0.95em;
+    .service-item:hover {
+      transform: translateY(-5px);
     }
 
     .contact {
       text-align: center;
-      padding: 40px 20px;
-      background: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 60px 20px;
+      background-color: #ffffff;
+      border-top: 1px solid #ddd;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .contact h2 {
-      color: #004080;
+      color: #002147;
       font-size: 2.5em;
+      margin-bottom: 20px;
     }
 
     .contact-info {
-      margin: 20px 0;
-      font-size: 1.2em;
+      font-size: 1.1em;
       line-height: 1.8;
     }
 
@@ -192,6 +175,15 @@
     .floating-buttons a.call {
       background-color: #007bff;
     }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
   </style>
 </head>
 <body>
@@ -202,13 +194,11 @@
 
   <nav>
     <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero"></div>
-
-  <div class="hero-content">
+  <div class="hero">
     <h1>Welcome to Tomar Law Associates</h1>
     <p>Expert Legal Representation by Lokendra Singh Tomar</p>
   </div>
@@ -218,14 +208,22 @@
     <p>The association includes Narendra Pal Pawaiya, Kamlesh Kulshrestha, Dharmendra Parmar, Kuldeep Dandotia, Anuj Tiwari, Sachin Srivastava, Naresh Rathore, Satendra Singh Tomar, Divya Pratap Singh Tomar Advocate, and is led by Lokendra Singh Tomar.</p>
   </div>
 
-  <div class="gallery" id="gallery">
-    <h2>Photo Gallery</h2>
-    <div class="gallery-images">
-      <img src="gallery/gallery1.jpg.jpg" alt="Gallery 1">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery 2">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery 3">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery 4">
-      <img src="https://via.placeholder.com/300x200" alt="Gallery 5">
+  <div class="section" id="services">
+    <h2>Our Legal Services</h2>
+    <p>Thank you for contacting M.P. High Court Advocate Lokendra Singh Tomar. Please let us know how we can help you.</p>
+    <div class="services">
+      <div class="service-item">Criminal Cases</div>
+      <div class="service-item">Bail Application</div>
+      <div class="service-item">Suspension</div>
+      <div class="service-item">Family Matter</div>
+      <div class="service-item">Domestic Violence</div>
+      <div class="service-item">Maintenance</div>
+      <div class="service-item">Divorce</div>
+      <div class="service-item">Habeas Corpus</div>
+      <div class="service-item">Writ Petition</div>
+      <div class="service-item">Misc. Petition</div>
+      <div class="service-item">POSCO Specialist</div>
+      <div class="service-item">Marriage</div>
     </div>
   </div>
 
