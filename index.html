@@ -72,12 +72,6 @@
       margin-bottom: 30px;
     }
 
-    .section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      text-align: center;
-    }
-
     .practice-areas {
       display: flex;
       flex-wrap: wrap;
@@ -103,12 +97,19 @@
     #contact {
       background-color: #ffffffc0;
       padding: 50px 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     #contact h2 {
       margin-bottom: 30px;
       color: #002147;
+    }
+
+    .contact-info {
+      flex: 1;
+      margin-left: 20px;
     }
 
     .contact-info p {
@@ -119,6 +120,11 @@
     .contact-info a {
       color: #004080;
       text-decoration: none;
+    }
+
+    .contact-image {
+      max-width: 150px;
+      margin-right: 20px;
     }
 
     footer {
@@ -149,7 +155,7 @@
 
   <div class="section" id="about">
     <h2>About Us</h2>
-    <p>Tomar Law Associates is dedicated to offering the highest standard of legal representation for our clients. With years of experience, we specialize in various areas of law, ensuring justice and fairness for all.</p>
+    <p>Tomar Law Associates is dedicated to offering the highest standard of legal representation for our clients. With years of experience, we specialize in various areas of law, ensuring justice is served.</p>
   </div>
 
   <div class="section" id="areas">
@@ -157,22 +163,20 @@
     <div class="practice-areas">
       <div class="area">
         <h3>Criminal Law</h3>
-        <p>Strategic representation in criminal cases, ensuring your rights are protected at every stage.</p>
       </div>
       <div class="area">
         <h3>Family Law</h3>
-        <p>Legal support for divorce, child custody, maintenance, and inheritance disputes.</p>
       </div>
       <div class="area">
         <h3>Corporate & Real Estate Law</h3>
-        <p>Handling property transactions, legal due diligence, leasing, and corporate contracts.</p>
       </div>
     </div>
   </div>
 
   <div id="contact">
-    <h2>Contact Us</h2>
+    <img src="path-to-your-fathers-image.jpg" alt="Father" class="contact-image">
     <div class="contact-info">
+      <h2>Contact Us</h2>
       <p><strong>Phone:</strong> +91 9826943953 / +91 9407204773 / +91 9425078688</p>
       <p><strong>Email:</strong> <a href="mailto:lokendratomaradvocate@gmail.com">lokendratomaradvocate@gmail.com</a></p>
       <p><strong>Address:</strong> 61-A Hills View Colony, DD Nagar, Gwalior, Madhya Pradesh, India</p>
