@@ -57,7 +57,7 @@
 
     .hero {
       text-align: center;
-      padding: 20px 20px;
+      padding: 20px;
       background-color: #ffffff;
       color: #002147;
     }
@@ -99,6 +99,27 @@
       max-width: 800px;
       margin: 0 auto;
       line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .service-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
     }
 
     .contact {
@@ -147,6 +168,7 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -159,6 +181,25 @@
   <div class="section" id="about">
     <h2>About Our Association</h2>
     <p>The association includes Narendra Pal Pawaiya, Kamlesh Kulshrestha, Dharmendra Parmar, Kuldeep Dandotia, Anuj Tiwari, Sachin Srivastava, Naresh Rathore, Satendra Singh Tomar, Divya Pratap Singh Tomar Advocate, and is led by Lokendra Singh Tomar.</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Legal Services</h2>
+    <p>Thank you for contacting M.P. High Court Advocate Lokendra Singh Tomar. Please let us know how we can help you.</p>
+    <div class="services">
+      <div class="service-item">Criminal Cases</div>
+      <div class="service-item">Bail Application</div>
+      <div class="service-item">Suspension</div>
+      <div class="service-item">Family Matters</div>
+      <div class="service-item">Domestic Violence</div>
+      <div class="service-item">Maintenance</div>
+      <div class="service-item">Divorce</div>
+      <div class="service-item">Habeas Corpus</div>
+      <div class="service-item">Writ Petition</div>
+      <div class="service-item">Misc. Petition</div>
+      <div class="service-item">POSCO Specialist</div>
+      <div class="service-item">Marriage</div>
+    </div>
   </div>
 
   <div class="contact" id="contact">
